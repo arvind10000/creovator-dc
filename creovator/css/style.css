@@ -2357,3 +2357,49 @@ button {
     margin: 0 auto;
   }
 }
+@media (max-width: 768px) {
+  /* HERO SECTION FIXES */
+  .hero-title {
+    font-size: clamp(28px, 8vw, 36px) !important; /* Fluid size for mobile */
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%; /* Full-width buttons are easier to tap */
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    flex-direction: column; /* Stack stats vertically */
+    gap: 30px;
+    text-align: center;
+  }
+
+  /* SERVICES SECTION FIXES */
+  .services-grid-new {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 40px;
+  }
+
+  .service-card-new {
+    max-width: 100%;
+  }
+
+  .service-card-image {
+    height: 200px; /* Shorter image height on mobile */
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
